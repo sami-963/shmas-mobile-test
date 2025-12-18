@@ -1,0 +1,246 @@
+.joinUsCard {
+  min-height: fit-content;
+  height: auto;
+  box-sizing: border-box;
+  padding: 35px 10px;
+  text-align: center;
+  border-radius: 25px;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-bg-box-border);
+}
+/*cardContent*/
+.joinUsCard * {
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.joinUsCard .joinUsContent {
+  padding: 0 !important;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.joinUsCard .joinUsDescription {
+  max-width: 85%;
+  font-size: 0.9rem;
+}
+
+.joinUsContent span {
+  font-size: 1.1em;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.joinUsCard .sectionMainTitle {
+  font-size: 0.87rem;
+  width: fit-content;
+  margin: 0 auto !important;
+}
+
+.joinUsCard .sectionMainTitle h2 {
+  width: fit-content;
+  margin: 0 auto !important;
+}
+
+.joinUsCard .joinUsEmailContainer {
+  min-height: 40px;
+  min-width: 85%;
+  max-width: 90%;
+  gap: 15px;
+}
+
+.joinUsCard .joinUsEmailContainer * {
+  height: inherit;
+  border-radius: 15px;
+  border: none;
+}
+
+.joinUsCard .joinUsEmailContainer input {
+  width: 75%;
+  min-height: inherit;
+  padding-right: 20px;
+  color: white;
+  background-color: transparent;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--color-bg-box-border);
+}
+
+.joinUsCard input::placeholder {
+  font-size: 1rem;
+  font-family: var(--font-primary);
+  color: var(--color-text-muted);
+}
+
+.joinUsCard .joinUsContent .joinUsEmailContainer .joinNow {
+  min-width: fit-content;
+  min-height: inherit;
+  position: relative;
+  z-index: 10;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-primary);
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 30%,
+    var(--color-primary-blue)
+  );
+  transition: 0.5s;
+}
+
+.joinUsCard .joinUsContent .joinUsEmailContainer .joinNow:hover {
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-blue) 35%,
+    var(--color-primary-purple)
+  );
+}
+
+.joinUsCard .joinUsSectionImg {
+  max-width: 30%;
+  max-height: 100%;
+  min-height: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+.joinUsCard .joinUsSectionImg img {
+  min-height: auto;
+  min-width: auto;
+  min-width: 20%;
+  opacity: 0.4;
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 570px) {
+  .joinUsCard {
+    min-height: fit-content;
+    height: auto;
+  }
+
+  .joinUsCard .joinUsEmailContainer {
+    min-height: 40px;
+    max-height: 45px;
+    min-width: 85%;
+    max-width: 90%;
+    gap: 15px;
+    /* border: 1px solid red; */
+  }
+
+  .joinUsCard .joinUsEmailContainer input {
+    min-height: inherit;
+    flex: 1;
+  }
+
+  .joinUsCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: inherit;
+    /* padding: 10px; */
+    width: 15%;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .joinUsCard .joinUsSectionImg img {
+    min-height: auto;
+    min-width: auto;
+    max-width: 35%;
+  }
+
+  .joinUsCard .joinUsSectionImg .subsucribeFirstImg {
+    top: -5%;
+    right: 0%;
+    display: block;
+  }
+
+  .joinUsCard .joinUsSectionImg .subsucribeLastImg {
+    top: -5%;
+    left: 0%;
+    display: block;
+  }
+
+  .joinUsCard .joinUsEmailContainer {
+    min-height: 40px;
+    max-height: 41px;
+    min-width: 75%;
+    max-width: 90%;
+    gap: 15px;
+  }
+
+  .joinUsCard .joinUsEmailContainer input {
+    min-height: inherit;
+    flex: 1;
+  }
+
+  .joinUsCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: inherit;
+    padding: 0 10px;
+    width: 15%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 920px) {
+  .joinUsCard {
+    min-height: fit-content;
+  }
+
+  .joinUsCard .joinUsContent {
+    width: 80%;
+    gap: 15px;
+  }
+
+  .joinUsCard .sectionMainTitle {
+    font-size: 1.1rem;
+  }
+
+  .joinUsCard .joinUsDescription {
+    font-size: 1.1rem;
+  }
+
+  .joinUsCard .joinUsEmailContainer {
+    min-height: 50px;
+    min-width: 70%;
+    max-width: 85%;
+    gap: 15px;
+  }
+
+  .joinUsCard .joinUsEmailContainer input {
+    min-height: 50px;
+    flex: 1;
+  }
+
+  .joinUsCard .joinUsContent .joinUsEmailContainer .joinNow {
+    min-height: 100%;
+    padding: 12px 20px;
+    width: 15%;
+  }
+
+  .joinUsCard .joinUsSectionImg {
+    opacity: 0.6;
+  }
+
+  .joinUsCard .joinUsSectionImg img {
+    max-width: 40%;
+    min-width: 30%;
+    position: absolute;
+  }
+
+  .joinUsCard .joinUsSectionImg .subsucribeFirstImg {
+    top: 0%;
+    right: -5%;
+    display: block;
+  }
+  .joinUsCard .joinUsSectionImg .subsucribeLastImg {
+    top: 0%;
+    left: -5%;
+    display: block;
+  }
+}

@@ -1,0 +1,67 @@
+.sectionTitleWrapper {
+  text-align: center;
+  padding: 0;
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 60px !important;
+}
+
+.subTitle {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ac01ff, #1dcffc);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.mainTitle {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: white;
+}
+.sectionTitleWrapper {
+  margin-top: 70px;
+}
+/* تابليت*/
+@media (max-width: 992px) {
+  .sectionTitleWrapper {
+    margin-top: 130px !important;
+  }
+}
+
+/*جوال كبير  */
+
+@media (max-width: 768px) {
+  .sectionTitleWrapper {
+    margin-top: 100px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionTitleWrapper {
+    margin-top: 20px !important;
+  }
+  .mainTitle {
+    font-size: 30px;
+  }
+  .description {
+    max-width: 331px;
+    font-size: 12px;
+}
+}

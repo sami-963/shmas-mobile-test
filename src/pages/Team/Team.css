@@ -1,0 +1,416 @@
+.Halil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.GroupMemberImg .Halil .All-p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Halil .All-p .our-team-p {
+  font-family: var(--font-primary);
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+
+  background: linear-gradient(50deg, #7c4dff 0%, #00b4ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+}
+.Halil .All-p .our-team-p1 {
+  font-size: 2rem;
+  font-family: var(--font-primary);
+  font-weight: bold;
+
+  text-align: center;
+  margin: 0 auto;
+}
+.Halil .All-p .div-p {
+  display: flex;
+  gap: 20px;
+}
+.GroupMember1 {
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(900px);
+  border: 1px solid #313648;
+  padding: 20px 15px;
+  border-radius: 15px;
+  gap: 15px;
+}
+
+.GroupMemberImg {
+  width: 100px;
+  height: 110px;
+  border-radius: 500%;
+}
+.Halil .BlogDiv2-div-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transform: translateX(0px);
+}
+.BlogDiv2-div-1:hover .ArrowIcon {
+  transform: translateX(-5px);
+}
+.icon-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.icon-div .icons {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.ArrowIcon {
+  transition: transform 150ms ease;
+}
+.Members {
+  display: grid;
+  gap: 20px;
+  padding: 0 25px;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  width: 70%;
+  margin: 0 auto;
+}
+.GroubMember1-div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.GroubMember1-div .title1 {
+  font-weight: bold;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+}
+.GroupMember1 .text-title {
+  text-align: center;
+  width: 100%;
+}
+.GroubMember1-div .text {
+  font-family: var(--font-primary);
+  text-align: justify;
+  margin: 0;
+}
+.Halil .Statistics {
+  width: 60vw;
+  margin: 0 auto;
+  display: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-bg-dark);
+  box-shadow: 10px 10px 25px 0px #0e1015;
+  border-radius: 15px;
+  padding: 55px 0 40px 0;
+  border: 2px solid #313648;
+  gap: 15px;
+}
+.Halil .Statistics .statis {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  align-items: center;
+}
+
+.Halil .Statistics .statis .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Halil .Statistics .statis .numbers .nmb {
+  font-weight: bold;
+  font-size: 35px;
+}
+.Halil .Statistics .statis .numbers .operation {
+  font-size: 1.999rem;
+  font-weight: bold;
+  color: var(--color-primary-purple);
+}
+.Halil .Statistics .statis .sta-p {
+  color: var(--color-text-muted);
+  font-weight: bold;
+}
+
+/* Mobile screen */
+
+.Halil .Statistics-Mobile {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-bg-dark);
+  box-shadow: 10px 10px 25px 0px #0e1015;
+  border-radius: 15px;
+  padding: 55px 0 40px 0;
+  border: 2px solid #313648;
+  gap: 50px;
+}
+.Halil .Statistics-Mobile .statis {
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+  align-items: center;
+}
+
+.Halil .Statistics-Mobile .statis .numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Halil .Statistics-Mobile .statis .numbers .nmb {
+  font-weight: bold;
+  font-size: 35px;
+}
+.Halil .Statistics-Mobile .statis .numbers .operation {
+  font-size: 1.999rem;
+  font-weight: bold;
+  color: var(--color-primary-purple);
+}
+.Halil .Statistics-Mobile .statis .sta-p {
+  color: var(--color-text-muted);
+  font-weight: bold;
+}
+.Statistics-Mobile-div-1,
+.Statistics-Mobile-div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+/*  */
+.Halil .Testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.Halil .Testimonial .Testimonial-left {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 10px;
+  text-align: center;
+  line-height: 25px;
+}
+.Halil .Testimonial .Testimonial-left .Testimonial-p1 {
+  color: var(--color-primary-purple);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1px;
+}
+.Halil .Testimonial .Testimonial-left .Testimonial-p2 {
+  color: white;
+  font-size: var(--font-primary);
+  font-weight: bold;
+  font-size: 2.7rem;
+  margin: 15px 0;
+}
+.Halil .Testimonial .Testimonial-left .Testimonial-p3 {
+  color: var(--color-text-muted);
+  margin: 10px 0;
+}
+.Halil .Testimonial .Testimonial-left .ReadMore {
+  background-color: transparent;
+  background-image: radial-gradient(at top right, #1dcffc 0%, #ac01ff 100%);
+  width: fit-content;
+  padding: 20px 30px;
+  font-size: var(--font-primary);
+  border-radius: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 5px;
+  transition: all;
+  transition-duration: 100ms;
+}
+.Halil .Testimonial .Testimonial-left .ReadMore:hover {
+  scale: 1.1;
+}
+
+/* PersonRate */
+.Halil .Person {
+  width: 295px;
+  height: 280px;
+  border-radius: 10px;
+  background-color: var(--color-bg-dark);
+  padding: 10px 30px 0 30px;
+  margin: 0;
+  flex-shrink: 0;
+  box-shadow: 5px 5px 10px 0px #1b1e27c2;
+  border: 2px solid #313648;
+  box-shadow: 5px 5px 10px 0px #0e1015;
+  cursor: grab;
+  margin-right: 10px;
+}
+.Halil .my-swiper {
+  width: 97vw;
+  overflow: hidden;
+}
+.Halil .my-swiper .swiper-slide {
+  width: auto;
+}
+.Halil .Person .person-p1 {
+  color: var(--color-text-muted);
+}
+.Halil .Person .person-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Halil .Person .person-3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1px;
+  font-family: var(--font-primary);
+}
+.Halil .Person .person-3 .person-p2 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1px;
+}
+.Halil .Person .person-3 .person-p3 {
+  font-family: var(--font-primary);
+  color: var(--color-text-muted);
+  line-height: 1px;
+}
+
+.swipe-hint {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 310px) {
+  .Members {
+    width: 100%;
+    margin: 0;
+  }
+  .GroupMember1 {
+    width: 100%;
+  }
+}
+@media (min-width: 450px) {
+  .Statistics-Mobile-div-1,
+  .Statistics-Mobile-div-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 60px;
+  }
+  .Halil .Statistics-Mobile {
+    width: 60vw;
+  }
+  .Halil .Person {
+    width: 350px;
+  }
+  .Halil .my-swiper {
+    width: 90vw;
+  }
+}
+@media (min-width: 700px) {
+  .Halil .Statistics {
+    width: 70vw;
+  }
+  .Halil .Statistics-Mobile {
+    display: none;
+  }
+  .Halil .Statistics {
+    display: flex;
+    width: 90vw;
+  }
+}
+@media (min-width: 780px) {
+  .Halil .Statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    width: 90vw;
+    display: flex;
+  }
+
+  .Halil .Statistics > div {
+    width: 150px;
+    text-align: center;
+  }
+
+  .Halil .Testimonial {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 820px) {
+  .Members {
+    width: 86%;
+  }
+  .GroupMember1 {
+    width: 320px;
+  }
+}
+@media (min-width: 1028px) {
+  .Halil .Statistics {
+    width: 68vw;
+  }
+  .Members {
+    width: 95%;
+  }
+  .GroupMember1 {
+    width: 300px;
+  }
+}
+@media (min-width: 1228px) {
+  .Halil .Statistics {
+    width: 68vw;
+  }
+  .Members {
+    width: 80%;
+  }
+  .GroupMember1 {
+    width: 300px;
+  }
+}
+@media (min-width: 1428px) {
+  .Halil .Statistics {
+    width: 68vw;
+  }
+  .Members {
+    width: 70%;
+  }
+  .GroupMember1 {
+    width: 300px;
+  }
+}

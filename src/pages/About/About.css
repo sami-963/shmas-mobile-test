@@ -1,0 +1,855 @@
+section {
+  margin: 100px auto;
+  width: 100%;
+  overflow: visible;
+}
+/*Members*/
+button {
+  font-family: var(--font-primary);
+}
+
+.about-image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  border: 1px solid red !important;
+}
+
+.about-image-style {
+  max-width: 100% !important;
+}
+
+.about-image-style img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.aboutPage .learnAndCreateSection {
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 110px auto;
+}
+
+.aboutPage .learnAndCreateSectionImg {
+  max-width: 40%;
+}
+
+.aboutPage .learnAndCreateSectionImg img {
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.aboutPage .sectionContent {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.aboutPage section .smallTitle span {
+  font-size: 1.5em;
+  font-weight: bolder;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc); /* التدرج */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aboutPage .sectionMainTitle h2 {
+  font-size: 2em;
+}
+
+.aboutPage .sectionDescription {
+  width: 85%;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Progress Bars  team*/
+.aboutPage .progressItem {
+  height: 50px;
+  margin: 15px auto;
+}
+
+.aboutPage .label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.aboutPage .progressBar {
+  width: 100%;
+  height: 10px;
+  background: #3f3f46;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.aboutPage .progress {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.aboutPage .progress1 {
+  width: 80%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-purple),
+    var(--color-primary-blue)
+  );
+}
+
+.aboutPage .progress2 {
+  width: 92%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-blue),
+    var(--color-primary-purple)
+  );
+}
+
+.aboutPage .progress3 {
+  width: 74%;
+  background: linear-gradient(
+    to left,
+    var(--color-primary-purple),
+    var(--color-primary-blue)
+  );
+}
+
+.aboutPage .readMore {
+  margin-top: 30px;
+  padding: 12px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+  color: white;
+  transition: 0.3s;
+}
+
+.aboutPage .readMoreBtn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.aboutPage .learnAndCreateSectionImg {
+  min-width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.aboutPage .whyChooseUs {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutPage .whyChooseUs .smallTitle,
+.aboutPage .whyChooseUs .sectionMainTitle,
+.aboutPage .whyChooseUs .sectionDescription {
+  margin: 5px auto;
+}
+
+.aboutPage .whyChooseUs div {
+  height: fit-content;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.aboutPage .whyChooseUs .sectionCards {
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 300px;
+  padding: 0;
+  gap: 15px;
+}
+
+.aboutPage .sectionCards .cardContainer {
+  position: relative; /* needed for pseudo-elements */
+  min-width: 90%;
+  height: auto;
+  max-height: 400px !important;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 25px 35px;
+  background-color: var(--color-bg-dark);
+  box-shadow: var(--box-shadow);
+  border: 2px solid var(--color-bg-box-border); /* normal border */
+  transition: transform 0.5s ease; /* keep your transform transition */
+  overflow: visible; /* keep pseudo elements visible */
+}
+
+/* pseudo-element: gradient ring (hidden by default) */
+.aboutPage .sectionCards .cardContainer::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* full size of the card */
+  border-radius: inherit; /* matches the card radius */
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+  z-index: 0;
+  opacity: 0; /* hide until hover */
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+/* pseudo-element: inner cover that forms the "content area" */
+.aboutPage .sectionCards .cardContainer::after {
+  content: '';
+  position: absolute;
+  inset: 2px; /* thickness of the gradient "border" */
+  border-radius: calc(
+    20px - 2px
+  ); /* inner radius = outer radius - border width */
+  background: var(--color-bg-dark); /* same as card background */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* make content appear above the layers */
+.aboutPage .sectionCards .cardContainer > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* on hover: show the gradient ring and (optionally) hide the original border */
+.aboutPage .sectionCards .cardContainer:hover {
+  border-color: transparent; /* optional: hide the solid border when gradient appears */
+}
+
+.aboutPage .sectionCards .cardContainer:hover::before {
+  opacity: 1;
+}
+
+.aboutPage .sectionCards .cardContainer * {
+  text-align: right;
+  margin: 0;
+}
+
+.aboutPage .cardImg {
+  transition: transform 0.5s ease;
+}
+
+.aboutPage .cardImg img {
+  height: 75px;
+  width: 75px;
+}
+
+.aboutPage .cardContainer:hover .cardImg {
+  transform: translateY(-5px) scale(1.1);
+}
+
+.aboutPage .cardSub {
+  color: var(--color-text-muted);
+}
+
+/*.sectionCards .cardContainer .readMoreLink {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: right;
+  align-items: center;
+}
+
+.sectionCards .cardContainer .readMoreLink a {
+  width: 45%;
+} */
+
+.aboutPage .sectionHeader {
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.aboutPage .sectionHeader .headerText {
+  flex-direction: column;
+  align-items: flex-start;
+  max-height: 100px;
+  width: 100%;
+}
+
+.aboutPage .sectionHeader .headerText .sectionMainTitle h2 {
+  font-size: 1.7rem;
+  margin: 0 !important;
+}
+
+.aboutPage .pricingSection {
+  min-height: 280vh;
+}
+
+.aboutPage .pricingSection .sectionHeader {
+  width: 90%;
+  padding: 0;
+}
+
+.aboutPage .priceCards .pricingCard,
+.aboutPage .priceCards .cardContainer {
+  min-height: 100vh !important;
+}
+
+.aboutPage .pricingSection button,
+.aboutPage .sectionHeader button {
+  font-family: var(--font-primary);
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+  background: linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+}
+
+.aboutPage .pricingCard:nth-child(odd) button {
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+  border: 2px solid transparent;
+}
+.aboutPage .pricingCard:nth-child(odd) button:hover {
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+  border: none;
+}
+
+/* Even button: full gradient fill */
+.aboutPage .pricingCard:nth-child(even) button {
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-purple) 25%,
+    var(--color-primary-blue)
+  );
+}
+
+.aboutPage .pricingSection button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.aboutPage .priceCards {
+  flex-wrap: wrap;
+  min-height: 79vh;
+  max-height: 300vh;
+  margin: 30px auto;
+  justify-content: space-around;
+}
+
+.aboutPage .priceCards .pricingCard {
+  width: 90%;
+  border-radius: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  box-sizing: border-box;
+  min-height: inherit !important;
+  position: relative;
+  min-height: 600px;
+  margin: 15px;
+  padding: 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.aboutPage .pricingCard:nth-child(even) {
+  background: linear-gradient(#240031, #000a2f) padding-box,
+    linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.aboutPage .priceCards .pricingCard:nth-child(odd) {
+  border: 1px solid var(--color-text-muted);
+  transition: 0.3s;
+}
+
+.aboutPage .priceCards .pricingCard:nth-child(odd):hover {
+  background: linear-gradient(#240031, #000a2f) padding-box,
+    linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+
+  border: 2px solid transparent;
+}
+
+.aboutPage .priceCards .pricingCard:nth-child(even):hover {
+  border: 1px solid var(--color-text-muted);
+}
+
+.aboutPage .priceCards * {
+  width: 90%;
+  text-align: right;
+  margin: 0;
+}
+
+.aboutPage .pricingPrice {
+  font-weight: 500;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.aboutPage .priceAmount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 5px;
+}
+
+.aboutPage .pricePeriod {
+  font-size: 18px;
+  color: var(--color-text-muted);
+}
+
+.aboutPage .pricingCard hr {
+  border: 1px solid var(--e-global-color-text);
+  height: 0;
+}
+
+.aboutPage .priceCards ul {
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: disc;
+  padding-left: -20px;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.aboutPage .priceCards ul li {
+  width: 100%;
+  margin-right: -40px;
+  gap: 5px;
+  justify-content: right !important;
+  font-size: 1.1rem;
+}
+
+.aboutPage .angleIcon {
+  width: fit-content;
+  border: none;
+}
+
+.aboutPage .ourTeam {
+  margin: 50px auto;
+  flex-wrap: wrap !important;
+  margin: 100px auto;
+}
+
+.aboutPage .ourTeam .sectionMainTitle h2 {
+  font-size: 2.3em !important;
+}
+/* 
+.aboutPage .ourTeam .aboutGroupMembers {
+  margin: 50px auto !important;
+  display: flex;
+  flex-wrap: wrap !important;
+  margin: 0;
+  justify-content: center; /* space between cards 
+  align-items: stretch;
+  flex-wrap: nowrap; /* keep all in one row 
+  gap: 20px; /* spacing between cards 
+}
+
+.aboutPage .aboutGroupMembers .GroupMember1 {
+  min-width: 45%;
+  max-width: none;
+  text-align: center;
+  background-color: #43485936;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+} */
+
+/* .aboutPage .ourTeam .aboutGroupMembers .GroupMember1 img {
+  max-width: 100%;
+  height: 70%;
+  object-fit: contain;
+} */
+
+@media (min-width: 576px) {
+  /* .container {
+    width: 540px;
+  } */
+
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 70% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 100%;
+    height: 45vh;
+    justify-content: center;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 100%;
+    min-width: 50%;
+    max-width: 70%;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    max-width: 90%;
+  }
+
+  .aboutPage .pricingSection {
+    min-height: 250vh;
+  }
+
+  .aboutPage .pricingSection .headerText {
+    width: fit-content;
+  }
+
+  .aboutPage .pricingSection .priceCards {
+    flex-wrap: wrap;
+    min-height: fit-content !important;
+    height: auto;
+  }
+
+  .aboutPage .pricingSection .priceCards .pricingCard {
+    min-width: 90%;
+    width: 90%;
+    min-height: 100px !important;
+  }
+  .aboutPage .Members {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+  }
+  /* 
+
+  .aboutPage .aboutGroupMembers .GroupMember1 {
+    min-width: 90%;
+    max-width: 91%;
+  }
+
+  .aboutPage .aboutGroupMembers .GroupMember1 .title1 {
+    margin-top: 0px;
+  } */
+}
+
+@media (min-width: 768px) {
+  /* .container {
+    width: 750px;
+  }Members */
+
+  section {
+    min-width: 90%;
+  }
+
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 70% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: auto;
+    min-width: auto;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    max-width: 90%;
+  }
+
+  .aboutPage .pricingSection {
+    min-height: 180vh !important;
+  }
+
+  .aboutPage .pricingSection .sectionCards {
+    gap: 0;
+    height: 130vh !important;
+  }
+
+  .aboutPage .pricingSection .priceCards {
+    flex-wrap: wrap;
+    min-height: 200vh;
+    height: auto;
+  }
+
+  .aboutPage .pricingSection .priceCards .pricingCard {
+    min-width: 45%;
+    width: 45%;
+    min-height: 100px !important;
+    max-height: 100vh;
+  }
+
+  .aboutPage .pricingCard ul {
+    gap: 10px;
+  }
+
+  .aboutPage .pricingCard button {
+    padding: 10px 0;
+  }
+
+  .aboutPage .ourTeam .sectionHeader .headerText {
+    width: fit-content;
+  }
+  /* 
+  .aboutPage .aboutGroupMembers .GroupMember1 {
+    min-width: 30%;
+    max-width: 40%;
+  }
+
+  .aboutPage .ourTeam .GroupMember1 img {
+    max-width: 100%;
+    height: 70%;
+    object-fit: contain;
+  } */
+}
+
+@media (min-width: 920px) {
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 40% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .aboutPage .learnAndCreateSection {
+    flex-wrap: nowrap !important;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 40%;
+    max-width: 100%;
+    height: 75vh;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 100%;
+    max-width: 100%;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    width: 100%;
+    min-height: 70vh;
+    flex-wrap: nowrap;
+    max-height: 75vh;
+  }
+
+  .aboutPage .whyChooseUs .cardContainer {
+    width: 33%;
+    min-width: 30%;
+    max-width: 31%;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    min-height: 65vh;
+    margin-top: 20px;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards .cardContainer {
+    min-height: inherit;
+  }
+
+  .aboutPage .cardContainer .pricingSection {
+    max-height: 110vh;
+    min-height: 200vh;
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .pricingSection .sectionHeader {
+    min-width: 90%;
+  }
+
+  .pricingSection .priceCards {
+    flex-wrap: wrap;
+    min-width: 90%;
+    gap: 0;
+    min-height: 180vh;
+    height: 185vh;
+  }
+
+  .pricingSection .pricingCard {
+    min-width: 30% !important;
+    max-width: 45% !important;
+    min-height: 100vh !important;
+  }
+
+  .aboutPage .ourTeam {
+    min-width: 90%;
+  }
+  /* 
+  .aboutPage .ourTeam .aboutGroupMembers {
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .aboutPage .ourTeam .GroupMember1 {
+    gap: 0;
+    min-width: calc(85% / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .aboutPage .ourTeam .GroupMember1 img {
+    max-width: 100%;
+    transform: scale(1.09);
+  } */
+}
+/* 
+@media (min-width: 992px) {
+  .aboutPage .about-image-style {
+    max-width: 60%;
+    /* margin-right: 40px;
+    margin: 20px auto;
+    border: 1px solid red;
+  }
+} */
+
+@media (min-width: 1200px) {
+  /* .container {
+    width: 1290px;
+  } */
+
+  .about-image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-image-style {
+    max-width: 40% !important;
+  }
+
+  .about-image-style img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .aboutPage .learnAndCreateSectionImg {
+    min-width: 35%;
+    max-width: 60%;
+    max-height: none;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .aboutPage .learnAndCreateSection .learnAndCreateSectionImg img {
+    min-height: 90%;
+    max-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    object-fit: cover;
+  }
+
+  .aboutPage .whyChooseUs .sectionCards {
+    width: 90%;
+    min-height: 50vh;
+    height: 60vh;
+  }
+
+  /*button*/
+  .aboutPage .whyChooseUs .cardContainer {
+    width: 30%;
+  }
+
+  .aboutPage .pricingSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    padding: 0;
+  }
+
+  .aboutPage .pricingSection .priceCards {
+    gap: 0;
+    margin: 0 auto;
+    height: 60vh;
+  }
+
+  .aboutPage .pricingSection .pricingCard {
+    min-width: 25%;
+    max-width: 30%;
+    min-height: 55vh;
+  }
+
+  .aboutPage .pricingSection {
+    min-height: 100vh !important;
+  }
+
+  .aboutPage .pricingSection .priceCards {
+    max-width: 85%;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .aboutPage .pricingSection .priceCards .pricingCard {
+    min-width: 30%;
+    width: 31%;
+  }
+
+  .aboutPage .Members {
+    width: 100%;
+    margin: 50px auto;
+  }
+}

@@ -1,0 +1,187 @@
+.course-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 120vh;
+  margin-top: 30px;
+}
+
+/*left-col*/
+
+.courseDetails-title h1 {
+  background: linear-gradient(45deg, #ac01ff, #1dcffc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.course-details .right-col {
+  flex: 1;
+  order: 1;
+}
+
+.right-col .courseDetails-description {
+  max-width: 90%;
+}
+
+.course-info-box {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.course-info-box .line-one,
+.course-info-box .line-two {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.course-info-box .item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 17px;
+}
+
+.item .icon-star {
+  color: #edb60a;
+}
+
+.course-info-box .Text-color {
+  color: var(--e-global-color-text);
+  font-size: 13px;
+}
+
+.overview-container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.course-details .left-col {
+  width: fit-content;
+  height: fit-content;
+ top: 60px;
+  right: 70px;
+  box-sizing: border-box;
+  padding: 0 50px 20px;
+  border-radius: 30px;
+  background-color: #4348591c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  order: 0;
+}
+
+.left-col .course-img {
+  margin: 0 auto;
+  max-width: 60%;
+  height: fit-content;
+}
+
+.left-col .course-img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.left-col .courseDetails-price {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 10px;
+  height: 70px;
+  color: var(--color-text-light);
+}
+.left-col .get-course span {
+  color: var(--e-global-color-text);
+}
+
+.left-col .enroll-now {
+  gap: 10px;
+  max-width: 50%;
+  padding-top: 20px;
+}
+
+.enroll-now {
+}
+
+.enroll-now button {
+  border-radius: 10px;
+  min-width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  transition: 1s;
+  background: linear-gradient(45deg, #ac01ff, #1dcffc) border-box;
+  color: white;
+}
+
+.enroll-now button:hover {
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #1dcffc, #ac01ff) border-box;
+}
+
+.course-details .listItems p {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  color: var(--e-global-color-text);
+}
+
+.use-coupon {
+  height: 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.use-coupon .coupon-input {
+  gap: 10px;
+  height: 35px;
+  padding: 2px;
+  width: 100%;
+}
+.use-coupon .coupon-input button {
+  width: 30%;
+  height: inherit;
+  border-radius: 10px;
+  color: var(--color-text-light);
+  border: none;
+  background: linear-gradient(90deg, #ac01ff, #1dcffc) border-box;
+}
+.use-coupon .coupon-input input {
+  flex: 1;
+  height: 37px;
+  padding-right: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-bg-box-border);
+  background-color: var(--color-bg-dark);
+  outline: none;
+  color: var(--color-text-light);
+  font-family: var(--font-primary);
+}
+
+@media (min-width: 576px) {
+  .course-details {
+    min-width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .course-details .left-col {
+    width: 90%;
+  }
+}
+
+@media (min-width: 920px) {
+  .course-details {
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .course-details .left-col {
+    order: 1;
+    max-width: 50%;
+  }
+
+  .course-details .right-col {
+    order: 0;
+  }
+}

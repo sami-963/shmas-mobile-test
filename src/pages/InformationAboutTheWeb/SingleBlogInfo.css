@@ -1,0 +1,431 @@
+.Halil-InformationDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+}
+/*
+.Halil-InformationDiv-main {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+}
+.Right-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Right-div .Rt-1 {
+  max-width: 380px;
+  min-width: 300px;
+
+  max-height: 500px;
+  border-radius: 10px;
+  background: var(--color-bg-dark);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  box-shadow: var(--box-shadow);
+}
+.Right-div .Rt-2 {
+  max-width: 380px;
+  min-width: 300px;
+  max-height: 500px;
+  border-radius: 10px;
+  background: var(--color-bg-dark);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  box-shadow: var(--box-shadow);
+}
+.Right-div .Rt-3 {
+  max-width: 380px;
+  min-width: 300px;
+
+  max-height: 500px;
+  border-radius: 10px;
+  background: var(--color-bg-dark);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.bgForRightDiv {
+  background-image: radial-gradient(at bottom left, #1dcffc 0%, #ac01ff 100%);
+  border-radius: 10px;
+}
+.p {
+  margin: 0;
+}
+.Card-div-1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.Card-div-1 .CardImg {
+  width: 100px;
+  border-radius: 10px;
+}
+.Rt-1 .p-1 {
+  font-weight: bold;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+}
+.Card-div-1 .Card-div-2 {
+  display: flex;
+  font-weight: bold;
+  font-family: var(--font-primary);
+  flex-direction: column;
+  justify-items: center;
+  gap: 5px;
+}
+.Card-div-1 .Card-div-2 .Card-div-3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--e-global-color-text);
+}
+.Right-div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+  margin-left: 1px;
+}
+.Right-div2 .Rt-p1 {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  color: white;
+  font-size: 1.5rem;
+}
+.Right-div2 .Rt-p2 {
+  color: var(--e-global-color-text);
+  text-align: justify;
+  margin: 2px 0;
+}
+.Right-div2 p {
+  margin: 0;
+  user-select: none;
+}
+.Right-div2 .Right-div3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.Right-div3 .Right-div4 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  width: fit-content;
+}
+.Right-div5 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Right-div5 .Link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.Right-div6 {
+  display: flex;
+  flex-direction: column;
+}
+.Right-div5 .Rt-p6 {
+  margin: 0;
+  font-size: 1.9rem;
+  font-family: var(--font-primary);
+  color: white;
+  font-weight: bold;
+}
+.Right-div6 .Link .Link-p {
+  font-size: 1.1rem;
+  font-family: var(--font-primary);
+  margin: 7px 0;
+}
+
+.Link .arrow {
+  transform: translateX(5);
+  transition: all;
+  transition-duration: 150ms;
+}
+
+.Link:hover .arrow {
+  transform: translateX(10px);
+  color: var(--e-global-color-text);
+}
+.Link:hover .Link-p {
+  color: var(--e-global-color-text);
+}
+/*Left Part*/
+.Main-Left .Left-p1 {
+  font: bold 2rem var(--font-primary);
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+.Left-img-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.planet-img {
+  width: 50%;
+  border-radius: 10px;
+
+}
+.Main-Left .Left-p2,
+.Main-Left .Left-p3,
+.Main-Left .Left-p4 {
+  font-family: var(--font-primary);
+  color: var(--e-global-color-text);
+  width: 90%;
+  text-align: center;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.Main-Left .Left-img {
+  width: 30%;
+  border-radius: 15px;
+
+}
+.Left-plan-div {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-height: 350px;
+
+}
+.Left-plan-div-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.Left-plan-p-1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
+}
+.Left-plan-div-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+}
+.Left-plan-div-3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+}
+.Left-plan-div-3 p {
+  margin: 2px 0;
+  font-weight: bold;
+  font-family: var(--font-primary);
+}
+.icon {
+  color: #1dcffc;
+}
+.Left-down-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.Left-down-p-1 {
+  color: var(--e-global-color-text);
+  margin-top: 15px;
+  font-size: 1.05rem;
+  text-align: justify;
+  width: 90%;
+  margin-right: 10px;
+  line-height: 30px;
+}
+.Left-down-div2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.Left-down-div3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Left-down-div4 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+  margin-left: 10px;
+}
+.Left-down-p-2 {
+  font-weight: bold;
+}
+.Left-down-span {
+  color: var(--e-global-color-text);
+}
+.Left-down-p-3 {
+  font-weight: bold;
+}
+/*Left-Connect*/
+.Left-Connect {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  border: 1px solid transparent;
+  box-shadow: var(--box-shadow);
+  border-radius: 26px;
+
+
+}
+.Left-Connect-p1 {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2px 0;
+}
+.Left-Connect-p2 {
+  font-family: var(--font-primary);
+  color: white;
+  line-height: 20px;
+}
+.form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+
+}
+.form-div-label {
+  font-weight: bold;
+  font-family: var(--font-primary);
+}
+.textArea {
+  resize: none;
+  min-height: 150px;
+}
+.textArea:focus,
+.Name:focus,
+.Email:focus,
+.Website:focus {
+  color: var(--color-text-light);
+}
+.textArea ,
+.Name,
+.Email,
+.Website {
+  width: 70%;
+  background: transparent;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid var(--color-bg-box-border);
+  padding:  15px;
+}
+.CheckBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.CheckBox-p {
+  font-weight: bold;
+  font-family: var(--font-primary);
+  font-size: 14px;
+}
+.CheckBox-Link {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background: radial-gradient(at top right, #1dcffc 0%, #ac01ff 100%);
+}
+.CheckBox-Link-p {
+  width: fit-content;
+}
+@media (max-width: 1200px) {
+  .Halil-InformationDiv {
+    width: 85vw;
+  }
+}
+@media (max-width: 920px) {
+  .Halil-InformationDiv {
+    width: 80vw;
+  }
+  .Halil-InformationDiv-main {
+    flex-direction: column-reverse;
+  }
+  .Halil-InformationDiv {
+    width: 95vw;
+  }
+  .Main-Left .Left-p2,
+  .Main-Left .Left-p3,
+  .Main-Left .Left-p4 {
+    width: 93%;
+    text-align: justify;
+    margin: 20px 0;
+    margin-right: 6px;
+  }
+
+  .Right-div .Rt-1 {
+    max-width: 100%;
+  }
+  .Right-div .Rt-2 {
+    max-width: 100%;
+  }
+  .Right-div .Rt-3 {
+    max-width: 100%;
+  }
+  .CheckBox-p {
+    font-size: 15px;
+    text-align: justify;
+  }
+  .CheckBox-Link {
+    font-weight: bold;
+    font-size: 14px;
+    background: radial-gradient(at top right, #1dcffc 0%, #ac01ff 100%);
+  }
+}
+@media (max-width: 690px) {
+  .Left-plan-div {
+    flex-direction: column;
+    max-height: 1000px;
+  }
+  .planet-img {
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+  }
+  .Left-down-p-2 {
+    display: none;
+  }
+  .Left-down-div2{
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .Halil-InformationDiv {
+    width: 80vw;
+  }
+}
+@media (min-width: 1400px) {
+  .Halil-InformationDiv {
+    width: 65vw;
+  }
+}
